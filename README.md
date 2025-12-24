@@ -13,3 +13,6 @@ Un mensaje para los más de 700 observadores:
 FLUX no es un producto financiero ni una herramienta para el ciclo actual de monetización. Es una arquitectura diseñada para la siguiente etapa de la inteligencia: una donde la confianza no la otorgan las instituciones, sino las leyes matemáticas del universo.
 
 Si estás esperando una "señal del mercado" para participar, estás mirando en la dirección equivocada. La señal es el código mismo.
+FLUX: Infrastructure for the Post-Scarcity Era
+
+"Nacemos con una información cósmica para la verdad, pero la sociedad del miedo nos moldea. FLUX es la herramienta técnica para romper ese molde. No estamos en el negocio de la monetización; estamos en la arquitectura de la soberanía biológica."
