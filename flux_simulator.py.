@@ -2,33 +2,41 @@ Python
 
 import time
 import uuid
+import random
 
-def iniciar_simulador():
-    # 1. Crear Identidad Soberana (Anónima y única)
-    identidad_flux = uuid.uuid4()
+def iniciar_simulador_comunitario():
+    mi_id = uuid.uuid4()
+    poblacion_local = 825  # Simulamos a tus observadores actuales
+    unidades_totales_red = 0.0
+    mis_unidades = 0.0
     
-    print("--- BIENVENIDO AL SIMULADOR DE SOBERANÍA FLUX ---")
-    print(f"Su Identidad Cósmica ha sido generada: {identidad_flux}")
-    print("Estado: EXISTIENDO (Derecho por nacimiento validado)")
-    print("--------------------------------------------------")
-    
-    unidades_rb = 0.0
-    tasa_flujo = 0.0001 # La velocidad a la que fluye el derecho cósmico
-    
+    print(f"--- ALDEA DIGITAL FLUX ACTIVADA ---")
+    print(f"Tu Nodo Soberano: {mi_id}")
+    print(f"Habitantes en tu red: {poblacion_local}")
+    print("-------------------------------------")
+
     try:
         while True:
-            # 2. Simular el flujo constante de la Renta Básica
-            unidades_rb += tasa_flujo
+            # Mi flujo personal
+            flujo_personal = 0.0001
+            mis_unidades += flujo_personal
             
-            # 3. Mostrar al usuario su soberanía en tiempo real
-            print(f"| Reloj Cósmico Activo | Unidades de Existencia Acumuladas: {unidades_rb:.6f} |", end="\r")
+            # El flujo de la comunidad (simulado)
+            flujo_comunidad = flujo_personal * poblacion_local
+            unidades_totales_red += flujo_comunidad
             
-            time.sleep(1) # El tiempo es el único validador necesario
+            # Mostrar la utilidad real
+            print(f"| TÚ: {mis_unidades:.4f} | RED LOCAL: {unidades_totales_red:.2f} unidades |", end="\r")
+            
+            # Simular un evento de "Intercambio Soberano" aleatorio
+            if random.random() < 0.05:
+                print(f"\n[AVISO] Nodo vecino ha validado un intercambio. La red es estable.")
+            
+            time.sleep(0.5)
             
     except KeyboardInterrupt:
-        print("\n\nSimulación pausada.")
-        print(f"Ha acumulado {unidades_rb:.6f} unidades de libertad.")
-        print("Recuerde: Su existencia no es una deuda, es un crédito cósmico.")
+        print("\nSimulación finalizada. La red persiste en el silicio.")
 
 if __name__ == "__main__":
-    iniciar_simulador()
+    iniciar_simulador_comunitario()
+🌍 ¿Para qué sirve
