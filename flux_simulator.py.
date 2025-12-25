@@ -1,0 +1,34 @@
+Python
+
+import time
+import uuid
+
+def iniciar_simulador():
+    # 1. Crear Identidad Soberana (Anónima y única)
+    identidad_flux = uuid.uuid4()
+    
+    print("--- BIENVENIDO AL SIMULADOR DE SOBERANÍA FLUX ---")
+    print(f"Su Identidad Cósmica ha sido generada: {identidad_flux}")
+    print("Estado: EXISTIENDO (Derecho por nacimiento validado)")
+    print("--------------------------------------------------")
+    
+    unidades_rb = 0.0
+    tasa_flujo = 0.0001 # La velocidad a la que fluye el derecho cósmico
+    
+    try:
+        while True:
+            # 2. Simular el flujo constante de la Renta Básica
+            unidades_rb += tasa_flujo
+            
+            # 3. Mostrar al usuario su soberanía en tiempo real
+            print(f"| Reloj Cósmico Activo | Unidades de Existencia Acumuladas: {unidades_rb:.6f} |", end="\r")
+            
+            time.sleep(1) # El tiempo es el único validador necesario
+            
+    except KeyboardInterrupt:
+        print("\n\nSimulación pausada.")
+        print(f"Ha acumulado {unidades_rb:.6f} unidades de libertad.")
+        print("Recuerde: Su existencia no es una deuda, es un crédito cósmico.")
+
+if __name__ == "__main__":
+    iniciar_simulador()
